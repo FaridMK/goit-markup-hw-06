@@ -56,7 +56,7 @@
                 <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-btn"><span class="hero-btn-words" data-modal-open>Заказать услугу</span></button>
             </div>
-            <div class="backdrop" data-modal>
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="close-button" data-modal-close>
                         <img class="close-icon" src="./images/close.svg" alt="close" /> 
@@ -110,7 +110,8 @@
                     <svg class="checkbox-icon" width="11" height="8">
                         <use href="./images/icons.svg#icon-check"></use>
                     </svg>
-                   </span>Соглашаюсь с рассылкой и принимаю <span class="privacy-link"> Условия договора </span> </label>
+                   </span>Соглашаюсь с рассылкой и принимаю<a class="privacy-link" href="">Условия договора</a>
+                </label>
                   </div>
 
                   <button type="submit" class="modal-button"><span>Отправить</span></button>
@@ -420,6 +421,29 @@
                             </svg></a></li>
                 </ul>
             </div>
+
+            <div class="signup">
+            <p class="signup-title">Подпишитесь на рассылку</p>
+            
+            <input 
+            type="email" 
+            name="email" 
+            class="signup-input"
+            placeholder="Email" />
+
+            <button type="submit" class="signup-button">
+                <span class="signup-btn-wrd">
+                <span class="signup-btn-title">Подписаться</span>
+                <svg class="signup-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send">
+                </use>
+            </svg>
+                </span>
+            </button>
+
+
+            </div>
+
         </div>
     </footer>
     <script src="./js/modal.js"></script>
